@@ -1,0 +1,99 @@
+|MUX_2_1_8BITS
+Z[0] <= MUX_2_1_1BIT:inst.Z
+Z[1] <= MUX_2_1_1BIT:inst5.Z
+Z[2] <= MUX_2_1_1BIT:inst6.Z
+Z[3] <= MUX_2_1_1BIT:inst7.Z
+Z[4] <= MUX_2_1_1BIT:inst8.Z
+Z[5] <= MUX_2_1_1BIT:inst9.Z
+Z[6] <= MUX_2_1_1BIT:inst10.Z
+Z[7] <= MUX_2_1_1BIT:inst11.Z
+A[0] => MUX_2_1_1BIT:inst.A
+A[1] => MUX_2_1_1BIT:inst5.A
+A[2] => MUX_2_1_1BIT:inst6.A
+A[3] => MUX_2_1_1BIT:inst7.A
+A[4] => MUX_2_1_1BIT:inst8.A
+A[5] => MUX_2_1_1BIT:inst9.A
+A[6] => MUX_2_1_1BIT:inst10.A
+A[7] => MUX_2_1_1BIT:inst11.A
+B[0] => MUX_2_1_1BIT:inst.B
+B[1] => MUX_2_1_1BIT:inst5.B
+B[2] => MUX_2_1_1BIT:inst6.B
+B[3] => MUX_2_1_1BIT:inst7.B
+B[4] => MUX_2_1_1BIT:inst8.B
+B[5] => MUX_2_1_1BIT:inst9.B
+B[6] => MUX_2_1_1BIT:inst10.B
+B[7] => MUX_2_1_1BIT:inst11.B
+S => MUX_2_1_1BIT:inst.S0
+S => MUX_2_1_1BIT:inst5.S0
+S => MUX_2_1_1BIT:inst6.S0
+S => MUX_2_1_1BIT:inst7.S0
+S => MUX_2_1_1BIT:inst8.S0
+S => MUX_2_1_1BIT:inst9.S0
+S => MUX_2_1_1BIT:inst10.S0
+S => MUX_2_1_1BIT:inst11.S0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst5
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst6
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst7
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst8
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst9
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst10
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+
+|MUX_2_1_8BITS|MUX_2_1_1BIT:inst11
+Z <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S0 => inst4.IN1
+S0 => inst6.IN0
+A => inst.IN0
+
+

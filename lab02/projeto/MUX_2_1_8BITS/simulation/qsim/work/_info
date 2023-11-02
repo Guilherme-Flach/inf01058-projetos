@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\UFRGS\CD\lab01_RCA\lab02\projeto\MUX_2_1_8BITS\simulation\qsim
+vMUX_2_1_8BITS
+Z1 I7Xf4=2ICO5B1abAJ9T0[]1
+Z2 VC<;h>E^oX>bC?zHe1z>><3
+Z3 dG:\UFRGS\CD\lab01_RCA\lab02\projeto\MUX_2_1_8BITS\simulation\qsim
+Z4 w1698942688
+Z5 8MUX_2_1_8BITS.vo
+Z6 FMUX_2_1_8BITS.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@m@u@x_2_1_8@b@i@t@s
+!i10b 1
+Z10 !s100 n]kQ4kP<j`8NT8n1:oIfD0
+!s85 0
+Z11 !s108 1698942691.631000
+Z12 !s107 MUX_2_1_8BITS.vo|
+Z13 !s90 -work|work|MUX_2_1_8BITS.vo|
+!s101 -O0
+vMUX_2_1_8BITS_vlg_check_tst
+!i10b 1
+!s100 jH>kQ>4Y>`CKdKm_Jo?f80
+IKm4EKe;Y[`Deb11f[?bkk3
+VPThcmWeiNB2g<=D_C?jGS0
+R3
+Z14 w1698942687
+Z15 8MUX_2_1_8BITS.vt
+Z16 FMUX_2_1_8BITS.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1698942691.785000
+Z18 !s107 MUX_2_1_8BITS.vt|
+Z19 !s90 -work|work|MUX_2_1_8BITS.vt|
+!s101 -O0
+R8
+n@m@u@x_2_1_8@b@i@t@s_vlg_check_tst
+vMUX_2_1_8BITS_vlg_sample_tst
+!i10b 1
+!s100 o1n:D8SMZ1W77a=M;QIS@1
+I9IVmm=Eiz4RZBnbW2m3GG3
+V20e<PWY41@kYf3W28eR:G0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@m@u@x_2_1_8@b@i@t@s_vlg_sample_tst
+vMUX_2_1_8BITS_vlg_vec_tst
+!i10b 1
+!s100 naiG5g;C]<Sm1;ec=AoTL0
+Io]O_azZJf:FzQWQI27J@H3
+V4`2PE=k2[Z9Rc0CE>7BOf2
+R3
+R14
+R15
+R16
+L0 281
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@m@u@x_2_1_8@b@i@t@s_vlg_vec_tst
