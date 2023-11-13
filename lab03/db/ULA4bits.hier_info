@@ -1,0 +1,251 @@
+|ULA4bits
+FLAG_Z <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+op_sel[0] => MUX4BITS:inst7.S
+op_sel[0] => MUX4BITS:inst8.S
+op_sel[1] => MUX4BITS:inst9.S
+A[0] => LAB01:inst.A[0]
+A[0] => inst4[0].IN0
+A[0] => inst5[0].IN1
+A[0] => inst6[0].IN0
+A[1] => LAB01:inst.A[1]
+A[1] => inst4[1].IN0
+A[1] => inst5[1].IN1
+A[1] => inst6[1].IN0
+A[2] => LAB01:inst.A[2]
+A[2] => inst4[2].IN0
+A[2] => inst5[2].IN1
+A[2] => inst6[2].IN0
+A[3] => LAB01:inst.A[3]
+A[3] => inst4[3].IN0
+A[3] => inst5[3].IN1
+A[3] => inst6[3].IN0
+B[0] => LAB01:inst.B[0]
+B[0] => inst4[0].IN1
+B[0] => inst5[0].IN0
+B[1] => LAB01:inst.B[1]
+B[1] => inst4[1].IN1
+B[1] => inst5[1].IN0
+B[2] => LAB01:inst.B[2]
+B[2] => inst4[2].IN1
+B[2] => inst5[2].IN0
+B[3] => LAB01:inst.B[3]
+B[3] => inst4[3].IN1
+B[3] => inst5[3].IN0
+FLAG_N <= O[3].DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= O[0].DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= O[1].DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= O[2].DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= O[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA4bits|MUX4BITS:inst9
+Z[0] <= MUX1BIT:inst.Z
+Z[1] <= MUX1BIT:inst2.Z
+Z[2] <= MUX1BIT:inst4.Z
+Z[3] <= MUX1BIT:inst3.Z
+A[0] => MUX1BIT:inst.A
+A[1] => MUX1BIT:inst2.A
+A[2] => MUX1BIT:inst4.A
+A[3] => MUX1BIT:inst3.A
+B[0] => MUX1BIT:inst.B
+B[1] => MUX1BIT:inst2.B
+B[2] => MUX1BIT:inst4.B
+B[3] => MUX1BIT:inst3.B
+S => MUX1BIT:inst.S
+S => MUX1BIT:inst2.S
+S => MUX1BIT:inst4.S
+S => MUX1BIT:inst3.S
+
+
+|ULA4bits|MUX4BITS:inst9|MUX1BIT:inst
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst9|MUX1BIT:inst2
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst9|MUX1BIT:inst4
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst9|MUX1BIT:inst3
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst7
+Z[0] <= MUX1BIT:inst.Z
+Z[1] <= MUX1BIT:inst2.Z
+Z[2] <= MUX1BIT:inst4.Z
+Z[3] <= MUX1BIT:inst3.Z
+A[0] => MUX1BIT:inst.A
+A[1] => MUX1BIT:inst2.A
+A[2] => MUX1BIT:inst4.A
+A[3] => MUX1BIT:inst3.A
+B[0] => MUX1BIT:inst.B
+B[1] => MUX1BIT:inst2.B
+B[2] => MUX1BIT:inst4.B
+B[3] => MUX1BIT:inst3.B
+S => MUX1BIT:inst.S
+S => MUX1BIT:inst2.S
+S => MUX1BIT:inst4.S
+S => MUX1BIT:inst3.S
+
+
+|ULA4bits|MUX4BITS:inst7|MUX1BIT:inst
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst7|MUX1BIT:inst2
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst7|MUX1BIT:inst4
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst7|MUX1BIT:inst3
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|LAB01:inst
+Cout <= FA:inst4.Cout
+A[0] => HA:inst.A
+A[1] => FA:inst2.A
+A[2] => FA:inst3.A
+A[3] => FA:inst4.A
+B[0] => HA:inst.B
+B[1] => FA:inst2.B
+B[2] => FA:inst3.B
+B[3] => FA:inst4.B
+S[0] <= HA:inst.S
+S[1] <= FA:inst2.S
+S[2] <= FA:inst3.S
+S[3] <= FA:inst4.S
+
+
+|ULA4bits|LAB01:inst|FA:inst4
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst3.IN0
+B => inst4.IN1
+B => inst3.IN1
+Cin => inst5.IN1
+Cin => inst.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA4bits|LAB01:inst|FA:inst3
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst3.IN0
+B => inst4.IN1
+B => inst3.IN1
+Cin => inst5.IN1
+Cin => inst.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA4bits|LAB01:inst|FA:inst2
+S <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst3.IN0
+B => inst4.IN1
+B => inst3.IN1
+Cin => inst5.IN1
+Cin => inst.IN1
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA4bits|LAB01:inst|HA:inst
+S <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst.IN1
+B => inst3.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ULA4bits|MUX4BITS:inst8
+Z[0] <= MUX1BIT:inst.Z
+Z[1] <= MUX1BIT:inst2.Z
+Z[2] <= MUX1BIT:inst4.Z
+Z[3] <= MUX1BIT:inst3.Z
+A[0] => MUX1BIT:inst.A
+A[1] => MUX1BIT:inst2.A
+A[2] => MUX1BIT:inst4.A
+A[3] => MUX1BIT:inst3.A
+B[0] => MUX1BIT:inst.B
+B[1] => MUX1BIT:inst2.B
+B[2] => MUX1BIT:inst4.B
+B[3] => MUX1BIT:inst3.B
+S => MUX1BIT:inst.S
+S => MUX1BIT:inst2.S
+S => MUX1BIT:inst4.S
+S => MUX1BIT:inst3.S
+
+
+|ULA4bits|MUX4BITS:inst8|MUX1BIT:inst
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst8|MUX1BIT:inst2
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst8|MUX1BIT:inst4
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
+|ULA4bits|MUX4BITS:inst8|MUX1BIT:inst3
+Z <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+B => inst4.IN0
+S => inst4.IN1
+S => inst2.IN0
+A => inst.IN0
+
+
