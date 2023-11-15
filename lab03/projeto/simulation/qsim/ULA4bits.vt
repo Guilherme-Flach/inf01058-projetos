@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/13/2023 18:18:37"
+// Generated on "11/14/2023 23:58:28"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    ULA4bits
 // 
@@ -287,35 +287,51 @@ ULA4bits i1 (
 initial
 begin
 	A[3] = 1'b0;
+	A[3] = #60000 1'b1;
+	A[3] = #120000 1'b0;
+	A[3] = #120000 1'b1;
+	A[3] = #120000 1'b0;
 end 
 // A[ 2 ]
 initial
 begin
-	A[2] = 1'b0;
+	A[2] = 1'b1;
+	A[2] = #60000 1'b0;
+	A[2] = #60000 1'b1;
+	A[2] = #60000 1'b0;
+	A[2] = #120000 1'b1;
+	A[2] = #120000 1'b0;
 end 
 // A[ 1 ]
 initial
 begin
 	A[1] = 1'b0;
+	A[1] = #120000 1'b1;
+	A[1] = #60000 1'b0;
+	A[1] = #120000 1'b1;
+	A[1] = #120000 1'b0;
 end 
 // A[ 0 ]
 initial
 begin
 	A[0] = 1'b0;
-	A[0] = #10000 1'b1;
-	A[0] = #80000 1'b0;
+	A[0] = #120000 1'b1;
+	A[0] = #60000 1'b0;
+	A[0] = #120000 1'b1;
+	A[0] = #120000 1'b0;
 end 
 // B[ 3 ]
 initial
 begin
 	B[3] = 1'b0;
-	B[3] = #10000 1'b1;
-	B[3] = #80000 1'b0;
+	B[3] = #60000 1'b1;
+	B[3] = #300000 1'b0;
 end 
 // B[ 2 ]
 initial
 begin
-	B[2] = 1'b0;
+	B[2] = 1'b1;
+	B[2] = #60000 1'b0;
 end 
 // B[ 1 ]
 initial
@@ -326,24 +342,22 @@ end
 initial
 begin
 	B[0] = 1'b0;
-	B[0] = #10000 1'b1;
-	B[0] = #80000 1'b0;
 end 
 // op_sel[ 1 ]
 initial
 begin
 	op_sel[1] = 1'b0;
-	op_sel[1] = #50000 1'b1;
-	op_sel[1] = #40000 1'b0;
+	op_sel[1] = #240000 1'b1;
+	op_sel[1] = #180000 1'b0;
 end 
 // op_sel[ 0 ]
 initial
 begin
 	op_sel[0] = 1'b0;
-	op_sel[0] = #30000 1'b1;
-	op_sel[0] = #20000 1'b0;
-	op_sel[0] = #20000 1'b1;
-	op_sel[0] = #20000 1'b0;
+	op_sel[0] = #120000 1'b1;
+	op_sel[0] = #120000 1'b0;
+	op_sel[0] = #120000 1'b1;
+	op_sel[0] = #60000 1'b0;
 end 
 
 ULA4bits_vlg_sample_tst tb_sample (

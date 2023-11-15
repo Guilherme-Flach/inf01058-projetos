@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/13/2023 18:26:09"
+// DATE "11/14/2023 23:58:30"
 
 // 
 // Device: Altera EP3C16F484C6 Package FBGA484
@@ -72,6 +72,10 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("ULA4bits_v.sdo");
+// synopsys translate_on
+
 wire \inst9|inst4|inst1~2_combout ;
 wire \inst9|inst3|inst1~3_combout ;
 wire \B[3]~input_o ;
@@ -98,7 +102,7 @@ wire \inst9|inst2|inst1~0_combout ;
 wire \B[0]~input_o ;
 wire \inst9|inst2|inst1~2_combout ;
 wire \inst9|inst|inst1~0_combout ;
-wire \inst2~0_combout ;
+wire \inst1~0_combout ;
 
 
 // Location: LCCOMB_X1_Y24_N10
@@ -157,7 +161,7 @@ defparam \A[3]~input .simulate_z_as = "z";
 
 // Location: IOOBUF_X0_Y24_N16
 cycloneiii_io_obuf \FLAG_Z~output (
-	.i(\inst2~0_combout ),
+	.i(!\inst1~0_combout ),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -450,20 +454,20 @@ defparam \inst9|inst|inst1~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y24_N16
-cycloneiii_lcell_comb \inst2~0 (
+cycloneiii_lcell_comb \inst1~0 (
 // Equation(s):
-// \inst2~0_combout  = (!\inst9|inst3|inst1~4_combout  & (\inst9|inst4|inst1~3_combout  & (\inst9|inst2|inst1~2_combout  & \inst9|inst|inst1~0_combout )))
+// \inst1~0_combout  = (\inst9|inst3|inst1~4_combout ) # ((\inst9|inst4|inst1~3_combout ) # ((\inst9|inst2|inst1~2_combout ) # (\inst9|inst|inst1~0_combout )))
 
 	.dataa(\inst9|inst3|inst1~4_combout ),
 	.datab(\inst9|inst4|inst1~3_combout ),
 	.datac(\inst9|inst2|inst1~2_combout ),
 	.datad(\inst9|inst|inst1~0_combout ),
 	.cin(gnd),
-	.combout(\inst2~0_combout ),
+	.combout(\inst1~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst2~0 .lut_mask = 16'h4000;
-defparam \inst2~0 .sum_lutc_input = "datac";
+defparam \inst1~0 .lut_mask = 16'hFFFE;
+defparam \inst1~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 assign FLAG_Z = \FLAG_Z~output_o ;
