@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dG:\UFRGS\CD\lab01_RCA\lab03\simulation\qsim
 vULA4bits
-Z1 IU^<E_bO6Ejo;>2@QIbHOl2
+Z1 I7fHBI@j6B2d:UKB8YJFP@1
 Z2 VV:=iR61@B2QQfJG:1jNzE0
 Z3 dG:\UFRGS\CD\lab01_RCA\lab03\projeto\simulation\qsim
-Z4 w1700017110
+Z4 w1700101942
 Z5 8ULA4bits.vo
 Z6 FULA4bits.vo
 L0 31
@@ -18,9 +18,9 @@ Z8 !s90 -work|work|ULA4bits.vo|
 Z9 o-work work -O0
 Z10 n@u@l@a4bits
 !i10b 1
-Z11 !s100 WR7ENWMfb9nLO;U9oZbE73
+Z11 !s100 6Sm[oW<]lGI9YON^MHC;Y3
 !s85 0
-Z12 !s108 1700017115.772000
+Z12 !s108 1700101946.250000
 Z13 !s107 ULA4bits.vo|
 !s101 -O0
 vULA4bits_vlg_check_tst
@@ -29,7 +29,7 @@ Z14 !s100 Mb<XZ@8@I3X@GXgKnji3;3
 Z15 IRXBAZnhz;SIe@aZ:JCYQj3
 Z16 V]7N>k`kJ3FSlRGf_DmGAW1
 R3
-Z17 w1700017108
+Z17 w1700101941
 Z18 8ULA4bits.vt
 Z19 FULA4bits.vt
 L0 61
@@ -37,7 +37,7 @@ R7
 r1
 !s85 0
 31
-Z20 !s108 1700017116.097000
+Z20 !s108 1700101946.437000
 Z21 !s107 ULA4bits.vt|
 Z22 !s90 -work|work|ULA4bits.vt|
 !s101 -O0

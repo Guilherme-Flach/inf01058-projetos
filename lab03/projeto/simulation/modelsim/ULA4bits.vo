@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/14/2023 23:58:30"
+// DATE "11/22/2023 20:09:04"
 
 // 
 // Device: Altera EP3C16F484C6 Package FBGA484
@@ -72,10 +72,6 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-// synopsys translate_off
-initial $sdf_annotate("ULA4bits_v.sdo");
-// synopsys translate_on
-
 wire \inst9|inst4|inst1~2_combout ;
 wire \inst9|inst3|inst1~3_combout ;
 wire \B[3]~input_o ;

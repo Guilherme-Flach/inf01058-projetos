@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ULA4bits
-Tue Nov 14 23:58:30 2023
+Wed Nov 22 20:09:04 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov 14 23:58:30 2023 ;
+; EDA Netlist Writer Status ; Successful - Wed Nov 22 20:09:04 2023 ;
 ; Revision Name             ; ULA4bits                              ;
 ; Top-level Entity Name     ; ULA4bits                              ;
 ; Family                    ; Cyclone III                           ;
@@ -50,8 +50,7 @@ applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate netlist for functional simulation only                                                   ; Off                       ;
-; Time scale                                                                                        ; 1 ps                      ;
+; Generate netlist for functional simulation only                                                   ; On                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -66,20 +65,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                ;
-+-------------------------------------------------------------------------------------------+
-; Generated Files                                                                           ;
-+-------------------------------------------------------------------------------------------+
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits_6_1200mv_85c_slow.vo     ;
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits_6_1200mv_0c_slow.vo      ;
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits_min_1200mv_0c_fast.vo    ;
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits.vo                       ;
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits_6_1200mv_85c_v_slow.sdo  ;
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits_6_1200mv_0c_v_slow.sdo   ;
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits_min_1200mv_0c_v_fast.sdo ;
-; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits_v.sdo                    ;
-+-------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------+
+; Simulation Generated Files                                          ;
++---------------------------------------------------------------------+
+; Generated Files                                                     ;
++---------------------------------------------------------------------+
+; G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/ULA4bits.vo ;
++---------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Nov 14 23:58:29 2023
-Info: Command: quartus_eda --functional=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog ULA4bits -c ULA4bits
-Info (204019): Generated file ULA4bits_6_1200mv_85c_slow.vo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file ULA4bits_6_1200mv_0c_slow.vo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file ULA4bits_min_1200mv_0c_fast.vo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Wed Nov 22 20:09:02 2023
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off ULA4bits -c ULA4bits
 Info (204019): Generated file ULA4bits.vo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file ULA4bits_6_1200mv_85c_v_slow.sdo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file ULA4bits_6_1200mv_0c_v_slow.sdo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file ULA4bits_min_1200mv_0c_v_fast.sdo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file ULA4bits_v.sdo in folder "G:/UFRGS/CD/lab01_RCA/lab03/projeto/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4505 megabytes
-    Info: Processing ended: Tue Nov 14 23:58:31 2023
+    Info: Peak virtual memory: 4513 megabytes
+    Info: Processing ended: Wed Nov 22 20:09:04 2023
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
