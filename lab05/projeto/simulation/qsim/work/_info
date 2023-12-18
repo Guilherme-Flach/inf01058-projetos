@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\LAB05\FREQ_DIV\simulation\qsim
+vFREQ_DIV
+Z1 !s100 d7A7SdBUln>6dF:XWDQlk3
+Z2 IbBi<>j>[hoeIH`OKC_89Y1
+Z3 V_ZGiRNbAZ;oh2CCj4HilB2
+Z4 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\LAB05\FREQ_DIV\simulation\qsim
+Z5 w1701999550
+Z6 8FREQ_DIV.vo
+Z7 FFREQ_DIV.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|FREQ_DIV.vo|
+Z10 o-work work -O0
+Z11 n@f@r@e@q_@d@i@v
+!i10b 1
+!s85 0
+Z12 !s108 1701999550.950000
+Z13 !s107 FREQ_DIV.vo|
+!s101 -O0
+vFREQ_DIV_vlg_check_tst
+!i10b 1
+Z14 !s100 3YdL9cH_Li@VUPXU2Q:0@2
+Z15 I_J[@l:ogYcl0]WOLB70Z]1
+Z16 ViKZ?a=`J:z3fKHTOeATG20
+R4
+Z17 w1701999549
+Z18 8FREQ_DIV.vt
+Z19 FFREQ_DIV.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1701999551.045000
+Z21 !s107 FREQ_DIV.vt|
+Z22 !s90 -work|work|FREQ_DIV.vt|
+!s101 -O0
+R10
+Z23 n@f@r@e@q_@d@i@v_vlg_check_tst
+vFREQ_DIV_vlg_sample_tst
+!i10b 1
+Z24 !s100 [Dibib41]:]P2D6W@fhJ]3
+Z25 IG4bPQj5R@o=CS]c`kC`CE3
+Z26 Vfgh9W]6JZPo^=9hOGDic32
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@f@r@e@q_@d@i@v_vlg_sample_tst
+vFREQ_DIV_vlg_vec_tst
+!i10b 1
+!s100 `nORLmF4SNMeLIX4L^J2B3
+IOUDDl?fW188ITa>OO_fGm2
+Z28 VRnEN^GG3zCV^dhaACkKbN2
+R4
+R17
+R18
+R19
+Z29 L0 155
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@f@r@e@q_@d@i@v_vlg_vec_tst
