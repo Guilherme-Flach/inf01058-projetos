@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\LAB06\CONTADOR_UP_DOWN\simulation\qsim
+vCONT_UP_DOWN
+Z1 I[gOF0[>X4kRRJU_=::Wbk2
+Z2 VELR1G`<U5jW`O<T46Y]Iz2
+Z3 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\LAB06\CONTADOR_UP_DOWN\simulation\qsim
+Z4 w1702946524
+Z5 8CONT_UP_DOWN.vo
+Z6 FCONT_UP_DOWN.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@c@o@n@t_@u@p_@d@o@w@n
+!i10b 1
+Z10 !s100 R3ajf3YBAOV2]Vf5ckE@o1
+!s85 0
+Z11 !s108 1702946527.529000
+Z12 !s107 CONT_UP_DOWN.vo|
+Z13 !s90 -work|work|CONT_UP_DOWN.vo|
+!s101 -O0
+vCONT_UP_DOWN_vlg_check_tst
+!i10b 1
+!s100 ]`OO=B]9S0C]XhgGT`>>B3
+I8KaN2@8bE<GQUV2B7Af^N2
+VW;ISoNkILkh4ZJMi3kb;f3
+R3
+Z14 w1702946523
+Z15 8CONT_UP_DOWN.vt
+Z16 FCONT_UP_DOWN.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z17 !s108 1702946527.624000
+Z18 !s107 CONT_UP_DOWN.vt|
+Z19 !s90 -work|work|CONT_UP_DOWN.vt|
+!s101 -O0
+R8
+n@c@o@n@t_@u@p_@d@o@w@n_vlg_check_tst
+vCONT_UP_DOWN_vlg_sample_tst
+!i10b 1
+!s100 K34ZIg[b@UOJ]F0REhi[i2
+In:BeZa[1[R4Xk0cz:_6@c3
+VH[4g?znn=7AN^A7hVCIoR2
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@c@o@n@t_@u@p_@d@o@w@n_vlg_sample_tst
+vCONT_UP_DOWN_vlg_vec_tst
+!i10b 1
+!s100 ePU`JFMXFz`R8>cOcgoJd0
+IB=MVPgEAU[B0YXLHX?c:L3
+V7TP__oH9Ia^f:V50O`X>K1
+R3
+R14
+R15
+R16
+L0 511
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@c@o@n@t_@u@p_@d@o@w@n_vlg_vec_tst

@@ -1,0 +1,669 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/18/2023 21:42:03"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    CONT_UP_DOWN
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module CONT_UP_DOWN_vlg_sample_tst(
+	C_IN,
+	CLK_IN,
+	CLK_S,
+	OP,
+	RES,
+	sampler_tx
+);
+input [7:0] C_IN;
+input  CLK_IN;
+input  CLK_S;
+input [1:0] OP;
+input  RES;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(C_IN or CLK_IN or CLK_S or OP or RES)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module CONT_UP_DOWN_vlg_check_tst (
+	A0,
+	A1,
+	B0,
+	B1,
+	C0,
+	C1,
+	D0,
+	D1,
+	E0,
+	E1,
+	F0,
+	F1,
+	G0,
+	G1,
+	sampler_rx
+);
+input  A0;
+input  A1;
+input  B0;
+input  B1;
+input  C0;
+input  C1;
+input  D0;
+input  D1;
+input  E0;
+input  E1;
+input  F0;
+input  F1;
+input  G0;
+input  G1;
+input sampler_rx;
+
+reg  A0_expected;
+reg  A1_expected;
+reg  B0_expected;
+reg  B1_expected;
+reg  C0_expected;
+reg  C1_expected;
+reg  D0_expected;
+reg  D1_expected;
+reg  E0_expected;
+reg  E1_expected;
+reg  F0_expected;
+reg  F1_expected;
+reg  G0_expected;
+reg  G1_expected;
+
+reg  A0_prev;
+reg  A1_prev;
+reg  B0_prev;
+reg  B1_prev;
+reg  C0_prev;
+reg  C1_prev;
+reg  D0_prev;
+reg  D1_prev;
+reg  E0_prev;
+reg  E1_prev;
+reg  F0_prev;
+reg  F1_prev;
+reg  G0_prev;
+reg  G1_prev;
+
+reg  A0_expected_prev;
+reg  A1_expected_prev;
+reg  B0_expected_prev;
+reg  B1_expected_prev;
+reg  C0_expected_prev;
+reg  C1_expected_prev;
+reg  D0_expected_prev;
+reg  D1_expected_prev;
+reg  E0_expected_prev;
+reg  E1_expected_prev;
+reg  F0_expected_prev;
+reg  F1_expected_prev;
+reg  G0_expected_prev;
+reg  G1_expected_prev;
+
+reg  last_A0_exp;
+reg  last_A1_exp;
+reg  last_B0_exp;
+reg  last_B1_exp;
+reg  last_C0_exp;
+reg  last_C1_exp;
+reg  last_D0_exp;
+reg  last_D1_exp;
+reg  last_E0_exp;
+reg  last_E1_exp;
+reg  last_F0_exp;
+reg  last_F1_exp;
+reg  last_G0_exp;
+reg  last_G1_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:14] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 14'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	A0_prev = A0;
+	A1_prev = A1;
+	B0_prev = B0;
+	B1_prev = B1;
+	C0_prev = C0;
+	C1_prev = C1;
+	D0_prev = D0;
+	D1_prev = D1;
+	E0_prev = E0;
+	E1_prev = E1;
+	F0_prev = F0;
+	F1_prev = F1;
+	G0_prev = G0;
+	G1_prev = G1;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	A0_expected_prev = A0_expected;
+	A1_expected_prev = A1_expected;
+	B0_expected_prev = B0_expected;
+	B1_expected_prev = B1_expected;
+	C0_expected_prev = C0_expected;
+	C1_expected_prev = C1_expected;
+	D0_expected_prev = D0_expected;
+	D1_expected_prev = D1_expected;
+	E0_expected_prev = E0_expected;
+	E1_expected_prev = E1_expected;
+	F0_expected_prev = F0_expected;
+	F1_expected_prev = F1_expected;
+	G0_expected_prev = G0_expected;
+	G1_expected_prev = G1_expected;
+end
+
+
+
+// expected A1
+initial
+begin
+	A1_expected = 1'bX;
+end 
+
+// expected B1
+initial
+begin
+	B1_expected = 1'bX;
+end 
+
+// expected C1
+initial
+begin
+	C1_expected = 1'bX;
+end 
+
+// expected D1
+initial
+begin
+	D1_expected = 1'bX;
+end 
+
+// expected E1
+initial
+begin
+	E1_expected = 1'bX;
+end 
+
+// expected F1
+initial
+begin
+	F1_expected = 1'bX;
+end 
+
+// expected G1
+initial
+begin
+	G1_expected = 1'bX;
+end 
+
+// expected A0
+initial
+begin
+	A0_expected = 1'bX;
+end 
+
+// expected B0
+initial
+begin
+	B0_expected = 1'bX;
+end 
+
+// expected C0
+initial
+begin
+	C0_expected = 1'bX;
+end 
+
+// expected D0
+initial
+begin
+	D0_expected = 1'bX;
+end 
+
+// expected E0
+initial
+begin
+	E0_expected = 1'bX;
+end 
+
+// expected F0
+initial
+begin
+	F0_expected = 1'bX;
+end 
+
+// expected G0
+initial
+begin
+	G0_expected = 1'bX;
+end 
+// generate trigger
+always @(A0_expected or A0 or A1_expected or A1 or B0_expected or B0 or B1_expected or B1 or C0_expected or C0 or C1_expected or C1 or D0_expected or D0 or D1_expected or D1 or E0_expected or E0 or E1_expected or E1 or F0_expected or F0 or F1_expected or F1 or G0_expected or G0 or G1_expected or G1)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected A0 = %b | expected A1 = %b | expected B0 = %b | expected B1 = %b | expected C0 = %b | expected C1 = %b | expected D0 = %b | expected D1 = %b | expected E0 = %b | expected E1 = %b | expected F0 = %b | expected F1 = %b | expected G0 = %b | expected G1 = %b | ",A0_expected_prev,A1_expected_prev,B0_expected_prev,B1_expected_prev,C0_expected_prev,C1_expected_prev,D0_expected_prev,D1_expected_prev,E0_expected_prev,E1_expected_prev,F0_expected_prev,F1_expected_prev,G0_expected_prev,G1_expected_prev);
+	$display("| real A0 = %b | real A1 = %b | real B0 = %b | real B1 = %b | real C0 = %b | real C1 = %b | real D0 = %b | real D1 = %b | real E0 = %b | real E1 = %b | real F0 = %b | real F1 = %b | real G0 = %b | real G1 = %b | ",A0_prev,A1_prev,B0_prev,B1_prev,C0_prev,C1_prev,D0_prev,D1_prev,E0_prev,E1_prev,F0_prev,F1_prev,G0_prev,G1_prev);
+`endif
+	if (
+		( A0_expected_prev !== 1'bx ) && ( A0_prev !== A0_expected_prev )
+		&& ((A0_expected_prev !== last_A0_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port A0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", A0_expected_prev);
+		$display ("     Real value = %b", A0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_A0_exp = A0_expected_prev;
+	end
+	if (
+		( A1_expected_prev !== 1'bx ) && ( A1_prev !== A1_expected_prev )
+		&& ((A1_expected_prev !== last_A1_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port A1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", A1_expected_prev);
+		$display ("     Real value = %b", A1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_A1_exp = A1_expected_prev;
+	end
+	if (
+		( B0_expected_prev !== 1'bx ) && ( B0_prev !== B0_expected_prev )
+		&& ((B0_expected_prev !== last_B0_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port B0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", B0_expected_prev);
+		$display ("     Real value = %b", B0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_B0_exp = B0_expected_prev;
+	end
+	if (
+		( B1_expected_prev !== 1'bx ) && ( B1_prev !== B1_expected_prev )
+		&& ((B1_expected_prev !== last_B1_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port B1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", B1_expected_prev);
+		$display ("     Real value = %b", B1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_B1_exp = B1_expected_prev;
+	end
+	if (
+		( C0_expected_prev !== 1'bx ) && ( C0_prev !== C0_expected_prev )
+		&& ((C0_expected_prev !== last_C0_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C0_expected_prev);
+		$display ("     Real value = %b", C0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_C0_exp = C0_expected_prev;
+	end
+	if (
+		( C1_expected_prev !== 1'bx ) && ( C1_prev !== C1_expected_prev )
+		&& ((C1_expected_prev !== last_C1_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port C1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", C1_expected_prev);
+		$display ("     Real value = %b", C1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_C1_exp = C1_expected_prev;
+	end
+	if (
+		( D0_expected_prev !== 1'bx ) && ( D0_prev !== D0_expected_prev )
+		&& ((D0_expected_prev !== last_D0_exp) ||
+			on_first_change[7])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port D0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", D0_expected_prev);
+		$display ("     Real value = %b", D0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[7] = 1'b0;
+		last_D0_exp = D0_expected_prev;
+	end
+	if (
+		( D1_expected_prev !== 1'bx ) && ( D1_prev !== D1_expected_prev )
+		&& ((D1_expected_prev !== last_D1_exp) ||
+			on_first_change[8])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port D1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", D1_expected_prev);
+		$display ("     Real value = %b", D1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[8] = 1'b0;
+		last_D1_exp = D1_expected_prev;
+	end
+	if (
+		( E0_expected_prev !== 1'bx ) && ( E0_prev !== E0_expected_prev )
+		&& ((E0_expected_prev !== last_E0_exp) ||
+			on_first_change[9])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port E0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", E0_expected_prev);
+		$display ("     Real value = %b", E0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[9] = 1'b0;
+		last_E0_exp = E0_expected_prev;
+	end
+	if (
+		( E1_expected_prev !== 1'bx ) && ( E1_prev !== E1_expected_prev )
+		&& ((E1_expected_prev !== last_E1_exp) ||
+			on_first_change[10])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port E1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", E1_expected_prev);
+		$display ("     Real value = %b", E1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[10] = 1'b0;
+		last_E1_exp = E1_expected_prev;
+	end
+	if (
+		( F0_expected_prev !== 1'bx ) && ( F0_prev !== F0_expected_prev )
+		&& ((F0_expected_prev !== last_F0_exp) ||
+			on_first_change[11])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port F0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", F0_expected_prev);
+		$display ("     Real value = %b", F0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[11] = 1'b0;
+		last_F0_exp = F0_expected_prev;
+	end
+	if (
+		( F1_expected_prev !== 1'bx ) && ( F1_prev !== F1_expected_prev )
+		&& ((F1_expected_prev !== last_F1_exp) ||
+			on_first_change[12])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port F1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", F1_expected_prev);
+		$display ("     Real value = %b", F1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[12] = 1'b0;
+		last_F1_exp = F1_expected_prev;
+	end
+	if (
+		( G0_expected_prev !== 1'bx ) && ( G0_prev !== G0_expected_prev )
+		&& ((G0_expected_prev !== last_G0_exp) ||
+			on_first_change[13])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port G0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", G0_expected_prev);
+		$display ("     Real value = %b", G0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[13] = 1'b0;
+		last_G0_exp = G0_expected_prev;
+	end
+	if (
+		( G1_expected_prev !== 1'bx ) && ( G1_prev !== G1_expected_prev )
+		&& ((G1_expected_prev !== last_G1_exp) ||
+			on_first_change[14])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port G1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", G1_expected_prev);
+		$display ("     Real value = %b", G1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[14] = 1'b0;
+		last_G1_exp = G1_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module CONT_UP_DOWN_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [7:0] C_IN;
+reg CLK_IN;
+reg CLK_S;
+reg [1:0] OP;
+reg RES;
+// wires                                               
+wire A0;
+wire A1;
+wire B0;
+wire B1;
+wire C0;
+wire C1;
+wire D0;
+wire D1;
+wire E0;
+wire E1;
+wire F0;
+wire F1;
+wire G0;
+wire G1;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+CONT_UP_DOWN i1 (
+// port map - connection between master ports and signals/registers   
+	.A0(A0),
+	.A1(A1),
+	.B0(B0),
+	.B1(B1),
+	.C0(C0),
+	.C1(C1),
+	.C_IN(C_IN),
+	.CLK_IN(CLK_IN),
+	.CLK_S(CLK_S),
+	.D0(D0),
+	.D1(D1),
+	.E0(E0),
+	.E1(E1),
+	.F0(F0),
+	.F1(F1),
+	.G0(G0),
+	.G1(G1),
+	.OP(OP),
+	.RES(RES)
+);
+
+// RES
+initial
+begin
+	RES = 1'b0;
+	RES = #30000 1'b1;
+	RES = #760000 1'b0;
+	RES = #30000 1'b1;
+end 
+
+// CLK_IN
+always
+begin
+	CLK_IN = 1'b0;
+	CLK_IN = #5000 1'b1;
+	#5000;
+end 
+
+// CLK_S
+initial
+begin
+	CLK_S = 1'b1;
+end 
+// OP[ 1 ]
+initial
+begin
+	OP[1] = 1'b0;
+	OP[1] = #100000 1'b1;
+	OP[1] = #240000 1'b0;
+	OP[1] = #260000 1'b1;
+	OP[1] = #190000 1'b0;
+end 
+// OP[ 0 ]
+initial
+begin
+	OP[0] = 1'b0;
+	OP[0] = #340000 1'b1;
+	OP[0] = #450000 1'b0;
+end 
+// C_IN[ 7 ]
+initial
+begin
+	C_IN[7] = 1'b0;
+end 
+// C_IN[ 6 ]
+initial
+begin
+	C_IN[6] = 1'b0;
+end 
+// C_IN[ 5 ]
+initial
+begin
+	C_IN[5] = 1'b0;
+end 
+// C_IN[ 4 ]
+initial
+begin
+	C_IN[4] = 1'b0;
+end 
+// C_IN[ 3 ]
+initial
+begin
+	C_IN[3] = 1'b1;
+end 
+// C_IN[ 2 ]
+initial
+begin
+	C_IN[2] = 1'b0;
+end 
+// C_IN[ 1 ]
+initial
+begin
+	C_IN[1] = 1'b0;
+	C_IN[1] = #740000 1'b1;
+end 
+// C_IN[ 0 ]
+initial
+begin
+	C_IN[0] = 1'b0;
+	C_IN[0] = #740000 1'b1;
+end 
+
+CONT_UP_DOWN_vlg_sample_tst tb_sample (
+	.C_IN(C_IN),
+	.CLK_IN(CLK_IN),
+	.CLK_S(CLK_S),
+	.OP(OP),
+	.RES(RES),
+	.sampler_tx(sampler)
+);
+
+CONT_UP_DOWN_vlg_check_tst tb_out(
+	.A0(A0),
+	.A1(A1),
+	.B0(B0),
+	.B1(B1),
+	.C0(C0),
+	.C1(C1),
+	.D0(D0),
+	.D1(D1),
+	.E0(E0),
+	.E1(E1),
+	.F0(F0),
+	.F1(F1),
+	.G0(G0),
+	.G1(G1),
+	.sampler_rx(sampler)
+);
+endmodule
+
