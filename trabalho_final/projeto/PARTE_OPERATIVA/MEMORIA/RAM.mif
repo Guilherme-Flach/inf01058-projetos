@@ -1,0 +1,36 @@
+WIDTH = 8; -- Tamanho da Palavra (8 bits)
+DEPTH = 8; -- Tamanho do Endereçamento (8 bits)
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+
+CONTENT BEGIN
+    00: 20; -- LDA 0x80
+    01: 80;
+    02: 60; -- NOT
+    03: 30; -- ADD 0x81
+    04: 81;
+    05: 30; -- ADD 0x82
+    06: 82;
+    07: A0; -- JZ 0x0D
+    08: 0D;
+    09: 20; -- LDA 0x83
+    0A: 83;
+    0B: 80; -- JMP 0F
+    0C: 0F;
+    0D: 20; -- LDA 0x84
+    0E: 84;
+    0F: 10; -- STA 0x85
+    10: 85;
+    11: 40; -- OR 0x86
+    12: 86;
+    13: 20; -- LDA 0x85
+    14: 85;
+    15: F0; -- HLT
+    80: 0A; -- ENDEREÇOES DE DADOS --
+    81: 01;
+    82: 0A;
+    83: 00;
+    84: 01;
+    85: 00;
+    86: FF;
+END;

@@ -1,0 +1,79 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 56 48 336 232)
+	(text "RAM" (rect 32 24 55 36)(font "Arial" ))
+	(text "inst" (rect 32 152 49 164)(font "Arial" ))
+	(port
+		(pt 0 56)
+		(input)
+		(text "CLK" (rect 0 16 21 28)(font "Arial" ))
+		(text "CLK" (rect 32 48 53 60)(font "Arial" ))
+		(line (pt 0 56)(pt 32 56))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "RST" (rect 0 16 21 28)(font "Arial" ))
+		(text "RST" (rect 32 64 53 76)(font "Arial" ))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "READ_EN" (rect 0 16 51 28)(font "Arial" ))
+		(text "READ_EN" (rect 32 80 83 92)(font "Arial" ))
+		(line (pt 0 88)(pt 32 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "WRITE_EN" (rect 0 16 56 28)(font "Arial" ))
+		(text "WRITE_EN" (rect 32 96 88 108)(font "Arial" ))
+		(line (pt 0 104)(pt 32 104))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "ADDR[7..0]" (rect 0 16 57 28)(font "Arial" ))
+		(text "ADDR[7..0]" (rect 32 112 89 124)(font "Arial" ))
+		(line (pt 0 120)(pt 32 120)(line_width 3))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "DATA_IN[7..0]" (rect 0 16 71 28)(font "Arial" ))
+		(text "DATA_IN[7..0]" (rect 32 128 103 140)(font "Arial" ))
+		(line (pt 0 136)(pt 32 136)(line_width 3))
+	)
+	(port
+		(pt 280 56)
+		(output)
+		(text "DATA_OUT[7..0]" (rect 40 16 122 28)(font "Arial" ))
+		(text "DATA_OUT[7..0]" (rect 168 48 237 60)(font "Arial" ))
+		(line (pt 280 56)(pt 240 56)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 32 40 240 152))
+		(circle (rect 16 64 32 80))
+	)
+)

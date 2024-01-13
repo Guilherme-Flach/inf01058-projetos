@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\inf01058-projetos\PROJETO_NEANDER\simulation\qsim
+vPROJETO_NEANDER
+Z1 Ii?AdmUfIKPSbGh5k>Ef8F0
+Z2 V[C2HmPoZe`?1<e=K`C:0m2
+Z3 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\inf01058-projetos\PROJETO_NEANDER\simulation\qsim
+Z4 w1703828888
+Z5 8PROJETO_NEANDER.vo
+Z6 FPROJETO_NEANDER.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|PROJETO_NEANDER.vo|
+Z9 o-work work -O0
+Z10 n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r
+!i10b 1
+Z11 !s100 ddTL]n;^TZU=kfe9A6^540
+!s85 0
+Z12 !s108 1703828888.843000
+Z13 !s107 PROJETO_NEANDER.vo|
+!s101 -O0
+vPROJETO_NEANDER_vlg_check_tst
+!i10b 1
+!s100 F3SLB:RFk[jo:>DkJk<D:0
+ImzSZOH:PiZ^oLUL]hflM91
+Z14 V7R]mj;0[ScPD?BLOCEcG20
+R3
+Z15 w1703828887
+Z16 8PROJETO_NEANDER.vt
+Z17 FPROJETO_NEANDER.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z18 !s108 1703828888.918000
+Z19 !s107 PROJETO_NEANDER.vt|
+Z20 !s90 -work|work|PROJETO_NEANDER.vt|
+!s101 -O0
+R9
+Z21 n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r_vlg_check_tst
+vPROJETO_NEANDER_vlg_sample_tst
+!i10b 1
+Z22 !s100 @jJPNo71bdgk]`7E9XU[M1
+Z23 I]Xe55:M7hKa1c_BL_AmEQ2
+Z24 V29bj67JXiZ6k=0lLKI2?[0
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z25 n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r_vlg_sample_tst
+vPROJETO_NEANDER_vlg_vec_tst
+!i10b 1
+!s100 5O_OdOhiEkD7483RXEFFb1
+IlbUYZ0VgD`?g5ASZ1<3Sm0
+Z26 Vh9R3zHV1oi97chbH?FOiB1
+R3
+R15
+R16
+R17
+L0 756
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z27 n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r_vlg_vec_tst

@@ -1,0 +1,929 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'RUN_STEP'
+Slack : -3.577
+TNS   : -122.950
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD7'
+Slack : -0.184
+TNS   : -0.184
+
+Type  : Slow 1200mV 85C Model Setup 'CLK_IN'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD16'
+Slack : 0.004
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD11'
+Slack : 0.016
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD17'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD21'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD15'
+Slack : 0.045
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD9'
+Slack : 0.048
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD13'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD19'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD5'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD8'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD12'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD20'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD0'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD18'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD14'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD10'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD6'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD2'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD4'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD1'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD3'
+Slack : 0.270
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'FREQ_DIV:FD0|FFD22'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD3'
+Slack : -0.089
+TNS   : -0.089
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD1'
+Slack : -0.058
+TNS   : -0.058
+
+Type  : Slow 1200mV 85C Model Hold 'CLK_IN'
+Slack : -0.037
+TNS   : -0.037
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD19'
+Slack : -0.028
+TNS   : -0.028
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD5'
+Slack : -0.027
+TNS   : -0.027
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD9'
+Slack : 0.008
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD13'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD4'
+Slack : 0.017
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD2'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD15'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD20'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD0'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD21'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD10'
+Slack : 0.031
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD6'
+Slack : 0.031
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD11'
+Slack : 0.032
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD14'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD18'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD12'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD8'
+Slack : 0.058
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD17'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD16'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD7'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'RUN_STEP'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'FREQ_DIV:FD0|FFD22'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'RUN_STEP'
+Slack : -0.330
+TNS   : -0.330
+
+Type  : Slow 1200mV 85C Model Removal 'RUN_STEP'
+Slack : 0.536
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'RUN_STEP'
+Slack : -3.000
+TNS   : -48.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK_IN'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD0'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD10'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD11'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD12'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD13'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD14'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD15'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD16'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD17'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD18'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD19'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD20'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD21'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD22'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD4'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD5'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD6'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD7'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD9'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Setup 'RUN_STEP'
+Slack : -3.145
+TNS   : -106.825
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD7'
+Slack : -0.090
+TNS   : -0.090
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD16'
+Slack : 0.066
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD11'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD17'
+Slack : 0.095
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD21'
+Slack : 0.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD15'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD9'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD13'
+Slack : 0.118
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLK_IN'
+Slack : 0.131
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD19'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD5'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD20'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD8'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD0'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD12'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD18'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD14'
+Slack : 0.226
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD10'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD6'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD2'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD4'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD1'
+Slack : 0.279
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD3'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD22'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK_IN'
+Slack : -0.115
+TNS   : -0.115
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD3'
+Slack : -0.097
+TNS   : -0.097
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD1'
+Slack : -0.073
+TNS   : -0.073
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD19'
+Slack : -0.050
+TNS   : -0.050
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD5'
+Slack : -0.045
+TNS   : -0.045
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD13'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD9'
+Slack : -0.018
+TNS   : -0.018
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD15'
+Slack : -0.010
+TNS   : -0.010
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD21'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD11'
+Slack : 0.004
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD4'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD2'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD0'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD20'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD10'
+Slack : 0.018
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD6'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD14'
+Slack : 0.022
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD18'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD12'
+Slack : 0.054
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD8'
+Slack : 0.057
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD17'
+Slack : 0.062
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD7'
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD16'
+Slack : 0.117
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'RUN_STEP'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD22'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'RUN_STEP'
+Slack : -0.185
+TNS   : -0.185
+
+Type  : Slow 1200mV 0C Model Removal 'RUN_STEP'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'RUN_STEP'
+Slack : -3.000
+TNS   : -48.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK_IN'
+Slack : -3.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD0'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD10'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD11'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD12'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD13'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD14'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD15'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD16'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD17'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD18'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD19'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD20'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD21'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD22'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD4'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD5'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD6'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD7'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD9'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Setup 'RUN_STEP'
+Slack : -1.580
+TNS   : -49.438
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD7'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLK_IN'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD17'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD11'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD21'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD16'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD15'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD9'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD13'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD19'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD5'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD8'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD12'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD20'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD18'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD0'
+Slack : 0.346
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD14'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD6'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD1'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD10'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD2'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD4'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD3'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FREQ_DIV:FD0|FFD22'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD3'
+Slack : -0.047
+TNS   : -0.047
+
+Type  : Fast 1200mV 0C Model Hold 'CLK_IN'
+Slack : -0.040
+TNS   : -0.040
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD1'
+Slack : -0.023
+TNS   : -0.023
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD19'
+Slack : -0.019
+TNS   : -0.019
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD4'
+Slack : -0.014
+TNS   : -0.014
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD2'
+Slack : -0.013
+TNS   : -0.013
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD5'
+Slack : -0.009
+TNS   : -0.009
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD10'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD6'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD18'
+Slack : -0.001
+TNS   : -0.001
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD14'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD20'
+Slack : 0.002
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD0'
+Slack : 0.003
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD12'
+Slack : 0.004
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD9'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD8'
+Slack : 0.007
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD13'
+Slack : 0.009
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD15'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD11'
+Slack : 0.014
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD21'
+Slack : 0.015
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD17'
+Slack : 0.050
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD16'
+Slack : 0.052
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD7'
+Slack : 0.087
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'RUN_STEP'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FREQ_DIV:FD0|FFD22'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'RUN_STEP'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'RUN_STEP'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'RUN_STEP'
+Slack : -3.000
+TNS   : -54.466
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK_IN'
+Slack : -3.000
+TNS   : -4.117
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD0'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD10'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD11'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD12'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD13'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD14'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD15'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD16'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD17'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD18'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD19'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD2'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD20'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD21'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD22'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD3'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD4'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD5'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD6'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD7'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD8'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FREQ_DIV:FD0|FFD9'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

@@ -1,0 +1,58 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 40 40 200 184)
+	(text "CONT_3b" (rect 40 24 94 38)(font "Arial" (font_size 8)))
+	(text "inst" (rect 40 104 57 116)(font "Arial" ))
+	(port
+		(pt 0 56)
+		(input)
+		(text "HLT" (rect 0 24 22 38)(font "Arial" (font_size 8)))
+		(text "HLT" (rect 40 48 62 62)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 40 56))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "CLK" (rect 0 24 23 38)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 40 64 63 78)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 40 72))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "RES" (rect 0 24 23 38)(font "Arial" (font_size 8)))
+		(text "RES" (rect 40 80 63 94)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 24 88))
+	)
+	(port
+		(pt 160 56)
+		(output)
+		(text "S[2..0]" (rect 48 24 84 38)(font "Arial" (font_size 8)))
+		(text "S[2..0]" (rect 80 48 116 62)(font "Arial" (font_size 8)))
+		(line (pt 160 56)(pt 120 56)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 40 40 120 104))
+		(circle (rect 24 80 40 96))
+	)
+)

@@ -1,0 +1,37 @@
+# do PROJETO_NEANDER.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PROJETO_NEANDER
+# 
+# Top level modules:
+# 	PROJETO_NEANDER
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PROJETO_NEANDER_vlg_sample_tst
+# -- Compiling module PROJETO_NEANDER_vlg_check_tst
+# -- Compiling module PROJETO_NEANDER_vlg_vec_tst
+# 
+# Top level modules:
+# 	PROJETO_NEANDER_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.PROJETO_NEANDER_vlg_vec_tst 
+# Loading work.PROJETO_NEANDER_vlg_vec_tst
+# Loading work.PROJETO_NEANDER
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_clkctrl
+# Loading cycloneiii_ver.cycloneiii_mux41
+# Loading cycloneiii_ver.cycloneiii_ena_reg
+# Loading work.PROJETO_NEANDER_vlg_sample_tst
+# Loading work.PROJETO_NEANDER_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from PROJETO_NEANDER_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from PROJETO_NEANDER_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /PROJETO_NEANDER_vlg_vec_tst File: PROJETO_NEANDER.vt
+# Simulation passed !
+# ** Note: $finish    : PROJETO_NEANDER.vt(752)
+#    Time: 1 us  Iteration: 0  Instance: /PROJETO_NEANDER_vlg_vec_tst/tb_out

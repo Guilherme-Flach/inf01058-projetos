@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\inf01058-projetos\PROJETO_NEANDER\RAM_VER\simulation\qsim
+vPROJETO_NEANDER_RAM
+Z1 I=<@nZ7:=VOdKNi=2SYFO:3
+Z2 VZn_RH19ZKYF;Sz`6;QYbZ3
+Z3 dC:\Users\hackm\Documents\UFRGS\2023-2\Circuitos_Digitais\inf01058-projetos\PROJETO_NEANDER\RAM_VER\simulation\qsim
+Z4 w1704233657
+Z5 8PROJETO_NEANDER_RAM.vo
+Z6 FPROJETO_NEANDER_RAM.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r_@r@a@m
+!i10b 1
+Z10 !s100 8;md6>a:_L:D6GfOR60<70
+!s85 0
+Z11 !s108 1704233658.506000
+Z12 !s107 PROJETO_NEANDER_RAM.vo|
+Z13 !s90 -work|work|PROJETO_NEANDER_RAM.vo|
+!s101 -O0
+vPROJETO_NEANDER_RAM_vlg_check_tst
+!i10b 1
+!s100 5YXln>ICYZAmziSYz;e>B3
+Imeej95fZik3HCR:o0Z8Tj2
+VG2hb`8kNKcQ?U[O6EoQ131
+R3
+R4
+Z14 8PROJETO_NEANDER_RAM.vt
+Z15 FPROJETO_NEANDER_RAM.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z16 !s108 1704233658.620000
+Z17 !s107 PROJETO_NEANDER_RAM.vt|
+Z18 !s90 -work|work|PROJETO_NEANDER_RAM.vt|
+!s101 -O0
+R8
+n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r_@r@a@m_vlg_check_tst
+vPROJETO_NEANDER_RAM_vlg_sample_tst
+!i10b 1
+!s100 hmLUni5P7N33dV:<9=6V<1
+I0ajlHOX>V=1L2a6zmojFc3
+VXg>R;oFF5LUzz]d9Q]MTk0
+R3
+R4
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r_@r@a@m_vlg_sample_tst
+vPROJETO_NEANDER_RAM_vlg_vec_tst
+!i10b 1
+!s100 fQ5id?SHeD62VSz^JVQgl2
+IljFl2eF7mV>UK3GCkV`U[1
+VVCdT5hn[S8RUHWBBT^bB[3
+R3
+R4
+R14
+R15
+L0 712
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+n@p@r@o@j@e@t@o_@n@e@a@n@d@e@r_@r@a@m_vlg_vec_tst

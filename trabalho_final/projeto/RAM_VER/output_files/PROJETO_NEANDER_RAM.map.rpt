@@ -1,0 +1,613 @@
+Analysis & Synthesis report for PROJETO_NEANDER_RAM
+Tue Jan 02 19:10:07 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jan 02 19:10:07 2024           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; PROJETO_NEANDER_RAM                             ;
+; Top-level Entity Name              ; PROJETO_NEANDER_RAM                             ;
+; Family                             ; Cyclone III                                     ;
+; Total logic elements               ; 199                                             ;
+;     Total combinational functions  ; 191                                             ;
+;     Dedicated logic registers      ; 69                                              ;
+; Total registers                    ; 69                                              ;
+; Total pins                         ; 99                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                          ;
++----------------------------------------------------------------------------+---------------------+---------------------+
+; Option                                                                     ; Setting             ; Default Value       ;
++----------------------------------------------------------------------------+---------------------+---------------------+
+; Device                                                                     ; EP3C16F484C6        ;                     ;
+; Top-level entity name                                                      ; PROJETO_NEANDER_RAM ; PROJETO_NEANDER_RAM ;
+; Family name                                                                ; Cyclone III         ; Cyclone IV GX       ;
+; Use smart compilation                                                      ; Off                 ; Off                 ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                  ; On                  ;
+; Enable compact report table                                                ; Off                 ; Off                 ;
+; Restructure Multiplexers                                                   ; Auto                ; Auto                ;
+; Create Debugging Nodes for IP Cores                                        ; Off                 ; Off                 ;
+; Preserve fewer node names                                                  ; On                  ; On                  ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                 ; Off                 ;
+; Verilog Version                                                            ; Verilog_2001        ; Verilog_2001        ;
+; VHDL Version                                                               ; VHDL_1993           ; VHDL_1993           ;
+; State Machine Processing                                                   ; Auto                ; Auto                ;
+; Safe State Machine                                                         ; Off                 ; Off                 ;
+; Extract Verilog State Machines                                             ; On                  ; On                  ;
+; Extract VHDL State Machines                                                ; On                  ; On                  ;
+; Ignore Verilog initial constructs                                          ; Off                 ; Off                 ;
+; Iteration limit for constant Verilog loops                                 ; 5000                ; 5000                ;
+; Iteration limit for non-constant Verilog loops                             ; 250                 ; 250                 ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                  ; On                  ;
+; Infer RAMs from Raw Logic                                                  ; On                  ; On                  ;
+; Parallel Synthesis                                                         ; On                  ; On                  ;
+; DSP Block Balancing                                                        ; Auto                ; Auto                ;
+; NOT Gate Push-Back                                                         ; On                  ; On                  ;
+; Power-Up Don't Care                                                        ; On                  ; On                  ;
+; Remove Redundant Logic Cells                                               ; Off                 ; Off                 ;
+; Remove Duplicate Registers                                                 ; On                  ; On                  ;
+; Ignore CARRY Buffers                                                       ; Off                 ; Off                 ;
+; Ignore CASCADE Buffers                                                     ; Off                 ; Off                 ;
+; Ignore GLOBAL Buffers                                                      ; Off                 ; Off                 ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                 ; Off                 ;
+; Ignore LCELL Buffers                                                       ; Off                 ; Off                 ;
+; Ignore SOFT Buffers                                                        ; On                  ; On                  ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                 ; Off                 ;
+; Optimization Technique                                                     ; Balanced            ; Balanced            ;
+; Carry Chain Length                                                         ; 70                  ; 70                  ;
+; Auto Carry Chains                                                          ; On                  ; On                  ;
+; Auto Open-Drain Pins                                                       ; On                  ; On                  ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                 ; Off                 ;
+; Auto ROM Replacement                                                       ; On                  ; On                  ;
+; Auto RAM Replacement                                                       ; On                  ; On                  ;
+; Auto DSP Block Replacement                                                 ; On                  ; On                  ;
+; Auto Shift Register Replacement                                            ; Auto                ; Auto                ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                ; Auto                ;
+; Auto Clock Enable Replacement                                              ; On                  ; On                  ;
+; Strict RAM Replacement                                                     ; Off                 ; Off                 ;
+; Allow Synchronous Control Signals                                          ; On                  ; On                  ;
+; Force Use of Synchronous Clear Signals                                     ; Off                 ; Off                 ;
+; Auto RAM Block Balancing                                                   ; On                  ; On                  ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                 ; Off                 ;
+; Auto Resource Sharing                                                      ; Off                 ; Off                 ;
+; Allow Any RAM Size For Recognition                                         ; Off                 ; Off                 ;
+; Allow Any ROM Size For Recognition                                         ; Off                 ; Off                 ;
+; Allow Any Shift Register Size For Recognition                              ; Off                 ; Off                 ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                  ; On                  ;
+; Ignore translate_off and synthesis_off directives                          ; Off                 ; Off                 ;
+; Timing-Driven Synthesis                                                    ; On                  ; On                  ;
+; Report Parameter Settings                                                  ; On                  ; On                  ;
+; Report Source Assignments                                                  ; On                  ; On                  ;
+; Report Connectivity Checks                                                 ; On                  ; On                  ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                 ; Off                 ;
+; Synchronization Register Chain Length                                      ; 2                   ; 2                   ;
+; PowerPlay Power Optimization                                               ; Normal compilation  ; Normal compilation  ;
+; HDL message level                                                          ; Level2              ; Level2              ;
+; Suppress Register Optimization Related Messages                            ; Off                 ; Off                 ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                ; 5000                ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                ; 5000                ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                 ; 100                 ;
+; Clock MUX Protection                                                       ; On                  ; On                  ;
+; Auto Gated Clock Conversion                                                ; Off                 ; Off                 ;
+; Block Design Naming                                                        ; Auto                ; Auto                ;
+; SDC constraint protection                                                  ; Off                 ; Off                 ;
+; Synthesis Effort                                                           ; Auto                ; Auto                ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                  ; On                  ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                 ; Off                 ;
+; Analysis & Synthesis Message Level                                         ; Medium              ; Medium              ;
+; Disable Register Merging Across Hierarchies                                ; Auto                ; Auto                ;
+; Resource Aware Inference For Block RAM                                     ; On                  ; On                  ;
+; Synthesis Seed                                                             ; 1                   ; 1                   ;
++----------------------------------------------------------------------------+---------------------+---------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                 ;
++------------------------------------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                           ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                                                                                       ; Library ;
++------------------------------------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../PARTE_OPERATIVA/DIV_FREQ/FREQ_DIV.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DIV_FREQ/FREQ_DIV.bdf                   ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_INSTRUCOES/DECOD_INST.bdf ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_INSTRUCOES/DECOD_INST.bdf ;         ;
+; ../PARTE_OPERATIVA/CODIFICADOR/COD_ULA.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/CODIFICADOR/COD_ULA.bdf                 ;         ;
+; ../PARTE_OPERATIVA/ULA/ULA.bdf                             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/ULA.bdf                             ;         ;
+; ../PARTE_OPERATIVA/ULA/RCA.bdf                             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/RCA.bdf                             ;         ;
+; ../PARTE_OPERATIVA/ULA/OR_8b.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/OR_8b.bdf                           ;         ;
+; ../PARTE_OPERATIVA/ULA/NOT_8b.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/NOT_8b.bdf                          ;         ;
+; ../PARTE_OPERATIVA/ULA/HA.bdf                              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/HA.bdf                              ;         ;
+; ../PARTE_OPERATIVA/ULA/Flag_Z_8b.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/Flag_Z_8b.bdf                       ;         ;
+; ../PARTE_OPERATIVA/ULA/Flag_N_8b.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/Flag_N_8b.bdf                       ;         ;
+; ../PARTE_OPERATIVA/ULA/FA.bdf                              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/FA.bdf                              ;         ;
+; ../PARTE_OPERATIVA/ULA/AND_8b.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/ULA/AND_8b.bdf                          ;         ;
+; ../PARTE_OPERATIVA/TEMPORIZADOR/TEMPORIZADOR.bdf           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/TEMPORIZADOR/TEMPORIZADOR.bdf           ;         ;
+; ../PARTE_OPERATIVA/TEMPORIZADOR/DECOD_3_8.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/TEMPORIZADOR/DECOD_3_8.bdf              ;         ;
+; ../PARTE_OPERATIVA/TEMPORIZADOR/CONT_3b.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/TEMPORIZADOR/CONT_3b.bdf                ;         ;
+; ../PARTE_OPERATIVA/RUN_STEP_MODE/RUN_STEP_MODE.bdf         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/RUN_STEP_MODE/RUN_STEP_MODE.bdf         ;         ;
+; ../PARTE_OPERATIVA/REGISTRADORES/REG_INC_8b.bdf            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/REGISTRADORES/REG_INC_8b.bdf            ;         ;
+; ../PARTE_OPERATIVA/REGISTRADORES/REG_8b.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/REGISTRADORES/REG_8b.bdf                ;         ;
+; ../PARTE_OPERATIVA/REGISTRADORES/REG_2I_8b.bdf             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/REGISTRADORES/REG_2I_8b.bdf             ;         ;
+; ../PARTE_OPERATIVA/REGISTRADORES/REG_2b.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/REGISTRADORES/REG_2b.bdf                ;         ;
+; ../PARTE_OPERATIVA/REGISTRADORES/MUX_4_1_1b_SI.bdf         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/REGISTRADORES/MUX_4_1_1b_SI.bdf         ;         ;
+; ../PARTE_OPERATIVA/MUX/MUX_8_1.bdf                         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/MUX/MUX_8_1.bdf                         ;         ;
+; ../PARTE_OPERATIVA/MUX/MUX_2_1_1b.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/MUX/MUX_2_1_1b.bdf                      ;         ;
+; ../PARTE_OPERATIVA/MUX/MUX_2_1.bdf                         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/MUX/MUX_2_1.bdf                         ;         ;
+; ../PARTE_OPERATIVA/MEMORIA/ROM1.vhd                        ; yes             ; User VHDL File                           ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/MEMORIA/ROM1.vhd                        ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_G.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_G.bdf       ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_F.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_F.bdf       ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_E.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_E.bdf       ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_D.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_D.bdf       ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_C.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_C.bdf       ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_B.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_B.bdf       ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_A.bdf       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_A.bdf       ;         ;
+; ../PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_4b.bdf      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_OPERATIVA/DECODIFICADOR_BCD/DECOD_BCD_4b.bdf      ;         ;
+; ../PARTE_DE_CONTROLE/WRITE.bdf                             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/WRITE.bdf                             ;         ;
+; ../PARTE_DE_CONTROLE/ULA_Y.bdf                             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/ULA_Y.bdf                             ;         ;
+; ../PARTE_DE_CONTROLE/ULA_OR.bdf                            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/ULA_OR.bdf                            ;         ;
+; ../PARTE_DE_CONTROLE/ULA_NOT.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/ULA_NOT.bdf                           ;         ;
+; ../PARTE_DE_CONTROLE/ULA_AND.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/ULA_AND.bdf                           ;         ;
+; ../PARTE_DE_CONTROLE/ULA_ADD.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/ULA_ADD.bdf                           ;         ;
+; ../PARTE_DE_CONTROLE/SEL.bdf                               ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/SEL.bdf                               ;         ;
+; ../PARTE_DE_CONTROLE/READ.bdf                              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/READ.bdf                              ;         ;
+; ../PARTE_DE_CONTROLE/INC_PC.bdf                            ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/INC_PC.bdf                            ;         ;
+; ../PARTE_DE_CONTROLE/GOTO_T0.bdf                           ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/GOTO_T0.bdf                           ;         ;
+; ../PARTE_DE_CONTROLE/CONT_UNIT.bdf                         ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/CONT_UNIT.bdf                         ;         ;
+; ../PARTE_DE_CONTROLE/C_RI.bdf                              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/C_RI.bdf                              ;         ;
+; ../PARTE_DE_CONTROLE/C_REM.bdf                             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/C_REM.bdf                             ;         ;
+; ../PARTE_DE_CONTROLE/C_RDM.bdf                             ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/C_RDM.bdf                             ;         ;
+; ../PARTE_DE_CONTROLE/C_PC.bdf                              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/C_PC.bdf                              ;         ;
+; ../PARTE_DE_CONTROLE/C_NZ.bdf                              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/C_NZ.bdf                              ;         ;
+; ../PARTE_DE_CONTROLE/C_AC.bdf                              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/PARTE_DE_CONTROLE/C_AC.bdf                              ;         ;
+; projeto_neander_ram.bdf                                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/hackm/Documents/UFRGS/2023-2/Circuitos_Digitais/inf01058-projetos/PROJETO_NEANDER/RAM_VER/projeto_neander_ram.bdf                         ;         ;
++------------------------------------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 199       ;
+;                                             ;           ;
+; Total combinational functions               ; 191       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 133       ;
+;     -- 3 input functions                    ; 24        ;
+;     -- <=2 input functions                  ; 34        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 191       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 69        ;
+;     -- Dedicated logic registers            ; 69        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 99        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; RST~input ;
+; Maximum fan-out                             ; 66        ;
+; Total fan-out                               ; 1090      ;
+; Average fan-out                             ; 2.38      ;
++---------------------------------------------+-----------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                    ; Library Name ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+--------------+
+; |PROJETO_NEANDER_RAM          ; 191 (1)           ; 69 (0)       ; 0           ; 0            ; 0       ; 0         ; 99   ; 0            ; |PROJETO_NEANDER_RAM                                                   ; work         ;
+;    |COD_ULA:COD|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|COD_ULA:COD                                       ; work         ;
+;    |CONT_UNIT:UC|             ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC                                      ; work         ;
+;       |C_AC:C_AC0|            ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|C_AC:C_AC0                           ; work         ;
+;       |C_PC:C_PC0|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|C_PC:C_PC0                           ; work         ;
+;       |C_RDM:C_RDM0|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|C_RDM:C_RDM0                         ; work         ;
+;       |C_REM:C_REM0|          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|C_REM:C_REM0                         ; work         ;
+;       |GOTO_T0:inst|          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|GOTO_T0:inst                         ; work         ;
+;       |INC_PC:INC_PC0|        ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|INC_PC:INC_PC0                       ; work         ;
+;       |READ:READ0|            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|READ:READ0                           ; work         ;
+;       |ULA_ADD:ULA_ADD0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|ULA_ADD:ULA_ADD0                     ; work         ;
+;       |ULA_AND:ULA_AND0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|ULA_AND:ULA_AND0                     ; work         ;
+;       |ULA_OR:ULA_OR0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|ULA_OR:ULA_OR0                       ; work         ;
+;       |ULA_Y:ULA_Y0|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|ULA_Y:ULA_Y0                         ; work         ;
+;       |WRITE:WRITE0|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|CONT_UNIT:UC|WRITE:WRITE0                         ; work         ;
+;    |DECOD_BCD_4b:DISP_OUT0|   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0                            ; work         ;
+;       |DECOD_BCD_A:OUT_A|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_A:OUT_A          ; work         ;
+;       |DECOD_BCD_B:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_B:inst           ; work         ;
+;       |DECOD_BCD_C:OUT_C|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_C:OUT_C          ; work         ;
+;       |DECOD_BCD_D:OUT_D|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_D:OUT_D          ; work         ;
+;       |DECOD_BCD_E:OUT_E|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_E:OUT_E          ; work         ;
+;       |DECOD_BCD_F:OUT_F|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_F:OUT_F          ; work         ;
+;       |DECOD_BCD_G:OUT_G|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_G:OUT_G          ; work         ;
+;    |DECOD_BCD_4b:DISP_OUT1|   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1                            ; work         ;
+;       |DECOD_BCD_A:OUT_A|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1|DECOD_BCD_A:OUT_A          ; work         ;
+;       |DECOD_BCD_B:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1|DECOD_BCD_B:inst           ; work         ;
+;       |DECOD_BCD_C:OUT_C|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1|DECOD_BCD_C:OUT_C          ; work         ;
+;       |DECOD_BCD_D:OUT_D|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1|DECOD_BCD_D:OUT_D          ; work         ;
+;       |DECOD_BCD_E:OUT_E|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1|DECOD_BCD_E:OUT_E          ; work         ;
+;       |DECOD_BCD_F:OUT_F|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1|DECOD_BCD_F:OUT_F          ; work         ;
+;       |DECOD_BCD_G:OUT_G|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT1|DECOD_BCD_G:OUT_G          ; work         ;
+;    |DECOD_BCD_4b:DISP_OUT2|   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2                            ; work         ;
+;       |DECOD_BCD_A:OUT_A|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2|DECOD_BCD_A:OUT_A          ; work         ;
+;       |DECOD_BCD_B:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2|DECOD_BCD_B:inst           ; work         ;
+;       |DECOD_BCD_C:OUT_C|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2|DECOD_BCD_C:OUT_C          ; work         ;
+;       |DECOD_BCD_D:OUT_D|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2|DECOD_BCD_D:OUT_D          ; work         ;
+;       |DECOD_BCD_E:OUT_E|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2|DECOD_BCD_E:OUT_E          ; work         ;
+;       |DECOD_BCD_F:OUT_F|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2|DECOD_BCD_F:OUT_F          ; work         ;
+;       |DECOD_BCD_G:OUT_G|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT2|DECOD_BCD_G:OUT_G          ; work         ;
+;    |DECOD_BCD_4b:DISP_OUT3|   ; 7 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3                            ; work         ;
+;       |DECOD_BCD_A:OUT_A|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3|DECOD_BCD_A:OUT_A          ; work         ;
+;       |DECOD_BCD_B:inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3|DECOD_BCD_B:inst           ; work         ;
+;       |DECOD_BCD_C:OUT_C|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3|DECOD_BCD_C:OUT_C          ; work         ;
+;       |DECOD_BCD_D:OUT_D|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3|DECOD_BCD_D:OUT_D          ; work         ;
+;       |DECOD_BCD_E:OUT_E|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3|DECOD_BCD_E:OUT_E          ; work         ;
+;       |DECOD_BCD_F:OUT_F|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3|DECOD_BCD_F:OUT_F          ; work         ;
+;       |DECOD_BCD_G:OUT_G|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_BCD_4b:DISP_OUT3|DECOD_BCD_G:OUT_G          ; work         ;
+;    |DECOD_INST:DECOD|         ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|DECOD_INST:DECOD                                  ; work         ;
+;    |FREQ_DIV:FD0|             ; 24 (24)           ; 24 (24)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|FREQ_DIV:FD0                                      ; work         ;
+;    |REG_2I_8b:RDM|            ; 13 (0)            ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM                                     ; work         ;
+;       |MUX_2_1_1b:MUX0|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX0                     ; work         ;
+;       |MUX_2_1_1b:MUX1|       ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX1                     ; work         ;
+;       |MUX_2_1_1b:MUX2|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX2                     ; work         ;
+;       |MUX_2_1_1b:MUX3|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX3                     ; work         ;
+;       |MUX_2_1_1b:MUX4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX4                     ; work         ;
+;       |MUX_2_1_1b:MUX5|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX5                     ; work         ;
+;       |MUX_2_1_1b:MUX6|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX6                     ; work         ;
+;       |MUX_2_1_1b:MUX7|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|MUX_2_1_1b:MUX7                     ; work         ;
+;    |REG_2b:NZ|                ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_2b:NZ                                         ; work         ;
+;    |REG_8b:AC|                ; 0 (0)             ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:AC                                         ; work         ;
+;    |REG_8b:REM|               ; 8 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM                                        ; work         ;
+;       |MUX_2_1_1b:MUX0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX0                        ; work         ;
+;       |MUX_2_1_1b:MUX1|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX1                        ; work         ;
+;       |MUX_2_1_1b:MUX2|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX2                        ; work         ;
+;       |MUX_2_1_1b:MUX3|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX3                        ; work         ;
+;       |MUX_2_1_1b:MUX4|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX4                        ; work         ;
+;       |MUX_2_1_1b:MUX5|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX5                        ; work         ;
+;       |MUX_2_1_1b:MUX6|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX6                        ; work         ;
+;       |MUX_2_1_1b:MUX7|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:REM|MUX_2_1_1b:MUX7                        ; work         ;
+;    |REG_8b:RI|                ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_8b:RI                                         ; work         ;
+;    |REG_INC_8b:PC|            ; 16 (8)            ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC                                     ; work         ;
+;       |MUX_4_1_1b_SI:MUX0|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX0                  ; work         ;
+;          |MUX_2_1_1b:MUX1|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX0|MUX_2_1_1b:MUX1  ; work         ;
+;       |MUX_4_1_1b_SI:MUX1|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX1                  ; work         ;
+;          |MUX_2_1_1b:MUX2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX1|MUX_2_1_1b:MUX2  ; work         ;
+;       |MUX_4_1_1b_SI:MUX2|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX2                  ; work         ;
+;          |MUX_2_1_1b:MUX2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX2|MUX_2_1_1b:MUX2  ; work         ;
+;       |MUX_4_1_1b_SI:MUX3|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX3                  ; work         ;
+;          |MUX_2_1_1b:MUX2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX3|MUX_2_1_1b:MUX2  ; work         ;
+;       |MUX_4_1_1b_SI:MUX4|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX4                  ; work         ;
+;          |MUX_2_1_1b:MUX2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX4|MUX_2_1_1b:MUX2  ; work         ;
+;       |MUX_4_1_1b_SI:MUX5|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX5                  ; work         ;
+;          |MUX_2_1_1b:MUX2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX5|MUX_2_1_1b:MUX2  ; work         ;
+;       |MUX_4_1_1b_SI:MUX6|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX6                  ; work         ;
+;          |MUX_2_1_1b:MUX2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX6|MUX_2_1_1b:MUX2  ; work         ;
+;       |MUX_4_1_1b_SI:MUX7|    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX7                  ; work         ;
+;          |MUX_2_1_1b:MUX2|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|MUX_4_1_1b_SI:MUX7|MUX_2_1_1b:MUX2  ; work         ;
+;    |ROM1:ROM0|                ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ROM1:ROM0                                         ; work         ;
+;    |RUN_STEP_MODE:RSM0|       ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|RUN_STEP_MODE:RSM0                                ; work         ;
+;       |MUX_2_1_1b:MUX0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|RUN_STEP_MODE:RSM0|MUX_2_1_1b:MUX0                ; work         ;
+;    |TEMPORIZADOR:TEMP|        ; 12 (1)            ; 4 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|TEMPORIZADOR:TEMP                                 ; work         ;
+;       |CONT_3b:CONT0|         ; 3 (2)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|TEMPORIZADOR:TEMP|CONT_3b:CONT0                   ; work         ;
+;          |MUX_2_1_1b:MUX0|    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|TEMPORIZADOR:TEMP|CONT_3b:CONT0|MUX_2_1_1b:MUX0   ; work         ;
+;       |DECOD_3_8:DECOD0|      ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|TEMPORIZADOR:TEMP|DECOD_3_8:DECOD0                ; work         ;
+;    |ULA:ULA0|                 ; 46 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0                                          ; work         ;
+;       |Flag_Z_8b:Z|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|Flag_Z_8b:Z                              ; work         ;
+;       |MUX_8_1:MUX|           ; 27 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX                              ; work         ;
+;          |MUX_2_1:MUX1|       ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1                 ; work         ;
+;             |MUX_2_1_1b:MUX0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX0 ; work         ;
+;             |MUX_2_1_1b:MUX1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX1 ; work         ;
+;             |MUX_2_1_1b:MUX2| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX2 ; work         ;
+;             |MUX_2_1_1b:MUX3| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX3 ; work         ;
+;             |MUX_2_1_1b:MUX4| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX4 ; work         ;
+;             |MUX_2_1_1b:MUX5| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX5 ; work         ;
+;             |MUX_2_1_1b:MUX6| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX6 ; work         ;
+;             |MUX_2_1_1b:MUX7| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX1|MUX_2_1_1b:MUX7 ; work         ;
+;          |MUX_2_1:MUX6|       ; 19 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6                 ; work         ;
+;             |MUX_2_1_1b:MUX0| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX0 ; work         ;
+;             |MUX_2_1_1b:MUX1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX1 ; work         ;
+;             |MUX_2_1_1b:MUX2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX2 ; work         ;
+;             |MUX_2_1_1b:MUX3| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX3 ; work         ;
+;             |MUX_2_1_1b:MUX4| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX4 ; work         ;
+;             |MUX_2_1_1b:MUX5| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX5 ; work         ;
+;             |MUX_2_1_1b:MUX6| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX6 ; work         ;
+;             |MUX_2_1_1b:MUX7| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX7 ; work         ;
+;       |RCA:ADD|               ; 16 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|RCA:ADD                                  ; work         ;
+;          |FA:Bit_1|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|RCA:ADD|FA:Bit_1                         ; work         ;
+;          |FA:Bit_2|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|RCA:ADD|FA:Bit_2                         ; work         ;
+;          |FA:Bit_3|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|RCA:ADD|FA:Bit_3                         ; work         ;
+;          |FA:Bit_4|           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|RCA:ADD|FA:Bit_4                         ; work         ;
+;          |FA:Bit_5|           ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|RCA:ADD|FA:Bit_5                         ; work         ;
+;          |FA:Bit_7|           ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |PROJETO_NEANDER_RAM|ULA:ULA0|RCA:ADD|FA:Bit_7                         ; work         ;
++-------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------+
+; Registers Removed During Synthesis                                ;
++---------------------------------------+---------------------------+
+; Register name                         ; Reason for Removal        ;
++---------------------------------------+---------------------------+
+; REG_8b:AC|FF7                         ; Merged with REG_2b:NZ|FF0 ;
+; Total Number of Removed Registers = 1 ;                           ;
++---------------------------------------+---------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 69    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |PROJETO_NEANDER_RAM|REG_2I_8b:RDM|FF0                                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |PROJETO_NEANDER_RAM|REG_8b:REM|FF3                                       ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |PROJETO_NEANDER_RAM|REG_INC_8b:PC|FF3                                    ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |PROJETO_NEANDER_RAM|ULA:ULA0|MUX_8_1:MUX|MUX_2_1:MUX6|MUX_2_1_1b:MUX0|OR ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 02 19:10:03 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PROJETO_NEANDER_RAM -c PROJETO_NEANDER_RAM
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/div_freq/freq_div.bdf
+    Info (12023): Found entity 1: FREQ_DIV
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_instrucoes/decod_inst.bdf
+    Info (12023): Found entity 1: DECOD_INST
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/codificador/cod_ula.bdf
+    Info (12023): Found entity 1: COD_ULA
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/ula.bdf
+    Info (12023): Found entity 1: ULA
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/rca.bdf
+    Info (12023): Found entity 1: RCA
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/or_8b.bdf
+    Info (12023): Found entity 1: OR_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/not_8b.bdf
+    Info (12023): Found entity 1: NOT_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/ha.bdf
+    Info (12023): Found entity 1: HA
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/flag_z_8b.bdf
+    Info (12023): Found entity 1: Flag_Z_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/flag_n_8b.bdf
+    Info (12023): Found entity 1: Flag_N_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/fa.bdf
+    Info (12023): Found entity 1: FA
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/ula/and_8b.bdf
+    Info (12023): Found entity 1: AND_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/temporizador/temporizador.bdf
+    Info (12023): Found entity 1: TEMPORIZADOR
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/temporizador/decod_3_8.bdf
+    Info (12023): Found entity 1: DECOD_3_8
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/temporizador/cont_3b.bdf
+    Info (12023): Found entity 1: CONT_3b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/run_step_mode/run_step_mode.bdf
+    Info (12023): Found entity 1: RUN_STEP_MODE
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/registradores/reg_inc_8b.bdf
+    Info (12023): Found entity 1: REG_INC_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/registradores/reg_8b.bdf
+    Info (12023): Found entity 1: REG_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/registradores/reg_2i_8b.bdf
+    Info (12023): Found entity 1: REG_2I_8b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/registradores/reg_2b.bdf
+    Info (12023): Found entity 1: REG_2b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/registradores/mux_4_1_1b_si.bdf
+    Info (12023): Found entity 1: MUX_4_1_1b_SI
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/mux/mux_8_1.bdf
+    Info (12023): Found entity 1: MUX_8_1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/mux/mux_2_1_1b.bdf
+    Info (12023): Found entity 1: MUX_2_1_1b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/mux/mux_2_1.bdf
+    Info (12023): Found entity 1: MUX_2_1
+Info (12021): Found 2 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/memoria/rom2.vhd
+    Info (12022): Found design unit 1: ROM2-arch
+    Info (12023): Found entity 1: ROM2
+Info (12021): Found 2 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/memoria/rom1.vhd
+    Info (12022): Found design unit 1: ROM1-arch
+    Info (12023): Found entity 1: ROM1
+Info (12021): Found 2 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/memoria/ram.vhd
+    Info (12022): Found design unit 1: RAM-arch
+    Info (12023): Found entity 1: RAM
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_g.bdf
+    Info (12023): Found entity 1: DECOD_BCD_G
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_f.bdf
+    Info (12023): Found entity 1: DECOD_BCD_F
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_e.bdf
+    Info (12023): Found entity 1: DECOD_BCD_E
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_d.bdf
+    Info (12023): Found entity 1: DECOD_BCD_D
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_c.bdf
+    Info (12023): Found entity 1: DECOD_BCD_C
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_b.bdf
+    Info (12023): Found entity 1: DECOD_BCD_B
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_a.bdf
+    Info (12023): Found entity 1: DECOD_BCD_A
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_operativa/decodificador_bcd/decod_bcd_4b.bdf
+    Info (12023): Found entity 1: DECOD_BCD_4b
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/write.bdf
+    Info (12023): Found entity 1: WRITE
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/ula_y.bdf
+    Info (12023): Found entity 1: ULA_Y
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/ula_or.bdf
+    Info (12023): Found entity 1: ULA_OR
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/ula_not.bdf
+    Info (12023): Found entity 1: ULA_NOT
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/ula_and.bdf
+    Info (12023): Found entity 1: ULA_AND
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/ula_add.bdf
+    Info (12023): Found entity 1: ULA_ADD
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/sel.bdf
+    Info (12023): Found entity 1: SEL
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/read.bdf
+    Info (12023): Found entity 1: READ
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/inc_pc.bdf
+    Info (12023): Found entity 1: INC_PC
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/goto_t0.bdf
+    Info (12023): Found entity 1: GOTO_T0
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/cont_unit.bdf
+    Info (12023): Found entity 1: CONT_UNIT
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/c_ri.bdf
+    Info (12023): Found entity 1: C_RI
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/c_rem.bdf
+    Info (12023): Found entity 1: C_REM
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/c_rdm.bdf
+    Info (12023): Found entity 1: C_RDM
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/c_pc.bdf
+    Info (12023): Found entity 1: C_PC
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/c_nz.bdf
+    Info (12023): Found entity 1: C_NZ
+Info (12021): Found 1 design units, including 1 entities, in source file /users/hackm/documents/ufrgs/2023-2/circuitos_digitais/inf01058-projetos/projeto_neander/parte_de_controle/c_ac.bdf
+    Info (12023): Found entity 1: C_AC
+Warning (12125): Using design file projeto_neander_ram.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: PROJETO_NEANDER_RAM
+Info (12127): Elaborating entity "PROJETO_NEANDER_RAM" for the top level hierarchy
+Info (12128): Elaborating entity "DECOD_BCD_4b" for hierarchy "DECOD_BCD_4b:DISP_OUT0"
+Info (12128): Elaborating entity "DECOD_BCD_A" for hierarchy "DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_A:OUT_A"
+Info (12128): Elaborating entity "DECOD_BCD_B" for hierarchy "DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_B:inst"
+Info (12128): Elaborating entity "DECOD_BCD_C" for hierarchy "DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_C:OUT_C"
+Info (12128): Elaborating entity "DECOD_BCD_D" for hierarchy "DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_D:OUT_D"
+Info (12128): Elaborating entity "DECOD_BCD_E" for hierarchy "DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_E:OUT_E"
+Info (12128): Elaborating entity "DECOD_BCD_F" for hierarchy "DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_F:OUT_F"
+Info (12128): Elaborating entity "DECOD_BCD_G" for hierarchy "DECOD_BCD_4b:DISP_OUT0|DECOD_BCD_G:OUT_G"
+Info (12128): Elaborating entity "REG_8b" for hierarchy "REG_8b:AC"
+Info (12128): Elaborating entity "MUX_2_1_1b" for hierarchy "REG_8b:AC|MUX_2_1_1b:MUX0"
+Info (12128): Elaborating entity "CONT_UNIT" for hierarchy "CONT_UNIT:UC"
+Warning (275009): Pin "HLT" not connected
+Info (12128): Elaborating entity "C_REM" for hierarchy "CONT_UNIT:UC|C_REM:C_REM0"
+Info (12128): Elaborating entity "INC_PC" for hierarchy "CONT_UNIT:UC|INC_PC:INC_PC0"
+Info (12128): Elaborating entity "C_RI" for hierarchy "CONT_UNIT:UC|C_RI:C_RI0"
+Info (12128): Elaborating entity "SEL" for hierarchy "CONT_UNIT:UC|SEL:SEL0"
+Info (12128): Elaborating entity "C_RDM" for hierarchy "CONT_UNIT:UC|C_RDM:C_RDM0"
+Info (12128): Elaborating entity "READ" for hierarchy "CONT_UNIT:UC|READ:READ0"
+Info (12128): Elaborating entity "WRITE" for hierarchy "CONT_UNIT:UC|WRITE:WRITE0"
+Info (12128): Elaborating entity "ULA_Y" for hierarchy "CONT_UNIT:UC|ULA_Y:ULA_Y0"
+Info (12128): Elaborating entity "ULA_OR" for hierarchy "CONT_UNIT:UC|ULA_OR:ULA_OR0"
+Info (12128): Elaborating entity "ULA_NOT" for hierarchy "CONT_UNIT:UC|ULA_NOT:ULA_NOT0"
+Info (12128): Elaborating entity "ULA_AND" for hierarchy "CONT_UNIT:UC|ULA_AND:ULA_AND0"
+Info (12128): Elaborating entity "C_AC" for hierarchy "CONT_UNIT:UC|C_AC:C_AC0"
+Info (12128): Elaborating entity "C_NZ" for hierarchy "CONT_UNIT:UC|C_NZ:C_NZ0"
+Info (12128): Elaborating entity "C_PC" for hierarchy "CONT_UNIT:UC|C_PC:C_PC0"
+Info (12128): Elaborating entity "GOTO_T0" for hierarchy "CONT_UNIT:UC|GOTO_T0:inst"
+Info (12128): Elaborating entity "ULA_ADD" for hierarchy "CONT_UNIT:UC|ULA_ADD:ULA_ADD0"
+Info (12128): Elaborating entity "DECOD_INST" for hierarchy "DECOD_INST:DECOD"
+Info (12128): Elaborating entity "RUN_STEP_MODE" for hierarchy "RUN_STEP_MODE:RSM0"
+Info (12128): Elaborating entity "FREQ_DIV" for hierarchy "FREQ_DIV:FD0"
+Info (12128): Elaborating entity "REG_2I_8b" for hierarchy "REG_2I_8b:RDM"
+Info (12128): Elaborating entity "MUX_2_1" for hierarchy "REG_2I_8b:RDM|MUX_2_1:inst"
+Info (12128): Elaborating entity "ROM1" for hierarchy "ROM1:ROM0"
+Info (12128): Elaborating entity "REG_INC_8b" for hierarchy "REG_INC_8b:PC"
+Info (12128): Elaborating entity "MUX_4_1_1b_SI" for hierarchy "REG_INC_8b:PC|MUX_4_1_1b_SI:MUX1"
+Info (12128): Elaborating entity "REG_2b" for hierarchy "REG_2b:NZ"
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA0"
+Info (12128): Elaborating entity "Flag_N_8b" for hierarchy "ULA:ULA0|Flag_N_8b:N"
+Info (12128): Elaborating entity "MUX_8_1" for hierarchy "ULA:ULA0|MUX_8_1:MUX"
+Info (12128): Elaborating entity "RCA" for hierarchy "ULA:ULA0|RCA:ADD"
+Info (12128): Elaborating entity "FA" for hierarchy "ULA:ULA0|RCA:ADD|FA:Bit_7"
+Info (12128): Elaborating entity "HA" for hierarchy "ULA:ULA0|RCA:ADD|HA:Bit_0"
+Info (12128): Elaborating entity "AND_8b" for hierarchy "ULA:ULA0|AND_8b:AND"
+Info (12128): Elaborating entity "OR_8b" for hierarchy "ULA:ULA0|OR_8b:OR"
+Info (12128): Elaborating entity "NOT_8b" for hierarchy "ULA:ULA0|NOT_8b:NOT"
+Info (12128): Elaborating entity "Flag_Z_8b" for hierarchy "ULA:ULA0|Flag_Z_8b:Z"
+Info (12128): Elaborating entity "COD_ULA" for hierarchy "COD_ULA:COD"
+Warning (275009): Pin "ULA_Y" not connected
+Info (12128): Elaborating entity "TEMPORIZADOR" for hierarchy "TEMPORIZADOR:TEMP"
+Info (12128): Elaborating entity "DECOD_3_8" for hierarchy "TEMPORIZADOR:TEMP|DECOD_3_8:DECOD0"
+Info (12128): Elaborating entity "CONT_3b" for hierarchy "TEMPORIZADOR:TEMP|CONT_3b:CONT0"
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer RUN_STEP_MODE:RSM0|MUX_2_1_1b:MUX0|OR~synth
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 95 output pins
+    Info (21061): Implemented 207 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4633 megabytes
+    Info: Processing ended: Tue Jan 02 19:10:07 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+
